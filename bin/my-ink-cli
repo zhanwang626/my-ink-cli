@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+// remove the first 2 args (node and script paths)
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require('../lib/cli').cli(process.argv.slice(2));
