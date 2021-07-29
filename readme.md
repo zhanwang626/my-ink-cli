@@ -13,3 +13,8 @@ Checkup ran the following task(s) successfully:
  ember-dependencies 
  ember-test 
 ```
+
+# Test
+```shell
+yarn test
+```

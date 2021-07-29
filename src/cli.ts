@@ -1,9 +1,9 @@
-import yargs from 'yargs';
+import * as yargs from 'yargs';
 import {summaryComponent, result} from './summary';
 
 export async function cli(): Promise<void> {
     yargs.command({
-        command: 'my-ink-cli',
+        command: 'run',
         handler: ()=> {
             const summary = summaryComponent;
             const result: result = {
@@ -11,5 +11,6 @@ export async function cli(): Promise<void> {
             }
             summary.render(result);
         }
-    }).argv
+    })
+    yargs.parse()
 }
